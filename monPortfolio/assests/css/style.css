@@ -7,3 +7,47 @@
 .fa-brands:hover {
     color: #0275d8;
 }
+
+.expHover:hover {
+    box-shadow: 10px 5px 5px #97999a;
+}
+
+.htmlColor {
+    color: #ec6231;
+}
+
+.htmlColor-Bg {
+    background-color: #ec6231;
+}
+
+.sassColor {
+    color: #cc6699;
+}
+
+.sassColor-Bg {
+    background-color: #cc6699;
+}
+
+.bsColor {
+    color: #563d7c;
+}
+
+.bsColor-Bg {
+    background-color: #563d7c;
+}
+
+.pyColor {
+    color: #306998;
+}
+
+.pyColor-Bg {
+    background-color: #306998;
+}
+
+.javaColor {
+    color: #5382a1;
+}
+
+.javaColor-Bg {
+    background-color: #5382a1;
+}
