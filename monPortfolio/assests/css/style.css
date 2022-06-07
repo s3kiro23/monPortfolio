@@ -3,3 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.fa-brands:hover {
+    color: #0275d8;
+}
