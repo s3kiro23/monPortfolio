@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-.fa-brands:hover {
+.fa-socials:hover {
     color: #0275d8;
 }
 
@@ -50,4 +50,20 @@
 
 .javaColor-Bg {
     background-color: #5382a1;
+}
+
+.phpColor {
+    color: #787CB5;
+}
+
+.phpColor-Bg {
+    background-color: #787CB5;
+}
+
+.sqlColor {
+    color: #00758F;
+}
+
+.sqlColor-Bg {
+    background-color: #00758F;
 }
