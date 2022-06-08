@@ -62,7 +62,7 @@
             <div class="container">
                 <h2 class="fw-bold">Mon expertise</h2>
                 <h3 class="fw-light">Développement web et design</h3>
-                <div class="row mt-4 gy-4">
+                <div class="row mt-4 gy-4 align-items-center">
                     <div class="col-12 col-md-7">
                         <div class="mb-3 p-3 bg-white shadow rounded-3">
                             <div class="row align-items-center">
@@ -154,7 +154,7 @@
                         <img class="shadow rounded-3" src="assests/img/code.jpg" alt="code" width="100%">
                     </div>
                 </div>
-                <div class="row mt-5 gy-4">
+                <div class="row mt-5 gy-4 align-items-center">
                     <div class="col-12 col-md-4">
                         <img class="shadow rounded-3" src="assests/img/design.jpg" alt="design" width="100%">
                     </div>
@@ -601,12 +601,39 @@
             <div class="container">
                 <h2 class="fw-bold">Un projet de création web ?</h2>
                 <h3 class="fw-light">Allons en discuter autour d'un café</h3>
-                <div class="row mt-5 gy-4">
+                <div class="row mt-5 gy-4 align-items-center">
                     <div class="col-12 col-md-5">
-                        <img class="w-100" src="assests/img/grab-a-coffee.jpg" alt="grab-a-coffee" width="100%">
+                        <img class="w-100 shadow rounded-3" src="assests/img/grab-a-coffee.jpg" alt="grab-a-coffee" width="100%">
                     </div>
                     <div class="col-12 col-md-6 offset-md-1">
-                        <div class="bg-secondary h-100 w-100 py-5"></div>
+                        <form action="" class="row gy-4">
+                            <div class="col-6">
+                                <label for="inputPrenom" class="form-label">Prénom</label>
+                                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="prenomHelp">
+                            </div>
+                            <div class="col-6">
+                                <label for="inputNom" class="form-label">Nom</label>
+                                <input type="text" class="form-control" id="inputNom" aria-describedby="nomHelp">
+                            </div>
+                            <div class="col-12">
+                                <label for="inputEmail" class="form-label">Adresse mail</label>
+                                <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp">
+                            </div>
+                            <div class="col-12">
+                                <label for="inputMessage" class="form-label">Message</label>
+                                <textarea class="form-control" id="inputMessage" rows="3"></textarea>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">En cochant cette case, vous acceptez les CGU du site.
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-primary w-100">Envoyer</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -621,7 +648,8 @@
                     </a>
                 </div>
                 <div class="col-12 col-sm col-md-4 text-center text-md-center">
-                    <a class="text-decoration-none text-dark" href="#">Mentions légales</a>
+                    <a class="text-decoration-none text-dark" type="button" data-bs-toggle="modal" 
+                        data-bs-target="#mentionsLegales">Mentions légales</a>
                 </div>
                 <div class="col col-sm col-md text-center text-md-end">
                     <ul class="list-inline mb-0 ">
@@ -641,6 +669,24 @@
                             </a>
                         </li>
                     </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="mentionsLegales" tabindex="-1" aria-labelledby="mentionsLegales" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="mentionsLegales">Mentions légales</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime quas alias, 
+                            accusamus consectetur inventore voluptas, omnis nulla modi suscipit illum laboriosam placeat optio 
+                            id facere repellat nisi nemo rem ea maiores pariatur molestiae itaque doloribus deleniti! Iure, 
+                            alias iusto. Sapiente?
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
