@@ -23,7 +23,7 @@
             }
             else if (link.classList.contains('P5'))
             {
-                window.location="#"
+                window.open("https://morpion-canvas.netlify.app", "_blank")
             }
             else if (link.classList.contains('P6'))
             {
