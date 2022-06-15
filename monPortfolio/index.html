@@ -247,7 +247,7 @@
                             <img src="https://picsum.photos/300/150?random=1" class="card-img" alt="carte1">
                             <a class="text-light" href="#" data-bs-toggle="offcanvas"
                             data-bs-target="#infoProjet1" aria-controls="infoProjet1">
-                                <div class="card-img-overlay">
+                                <div class="card-img-overlay bg-dark bg-opacity-50">
                                     <h5 class="card-title">IceScream</h5>
                                     <p class="card-text">Initiation à Javascript glacée!</p>
                                 </div>
@@ -256,8 +256,9 @@
                                 aria-labelledby="titleProjet1">
                                 <div class="offcanvas-header">
                                     <h5 class="offcanvas-title text-dark" id="titleProjet1">IceScream</h5>
-                                    <a class="btn btn-outline-primary P1">Pour accéder au site c'est par ici !</a>
-                                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" 
+                                    <a class="btn btn-outline-primary P1">Le site c'est par ici !</a>
+                                    <a class="btn btn-outline-success P1">Le code c'est par là !</a>
+                                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
                                         aria-label="Close">
                                     </button>
                                 </div>
@@ -302,243 +303,244 @@
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
-                        <div class="card bg-dark text-light">
-                            <img src="assests/img/max-van-den-oetelaar-buymYm3RQ3U-unsplash.png" class="card-img" alt="carte2">
-                            <div class="card-img-overlay bg-dark bg-opacity-50">
-                                <h5 class="card-title">WebDesigner</h5>
-                                <p class="card-text">CoOp Dev & WebD - Designed by Fiorina.</p>
-                                <button class="btn btn-primary col-5 align-self-end" type="button" data-bs-toggle="offcanvas"
-                                    data-bs-target="#infoProjet2" aria-controls="infoProjet2">En savoir plus
-                                </button>
-                                <div class="offcanvas offcanvas-bottom h-100" tabindex="-1" id="infoProjet2" 
-                                    aria-labelledby="titleProjet2">
-                                    <div class="offcanvas-header">
-                                        <h5 class="offcanvas-title text-dark" id="titleProjet2">WebDesigner</h5>
-                                        <a class="btn btn-outline-primary P2">Pour accéder au site c'est par ici !</a>
-                                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" 
-                                            aria-label="Close"></button>
-                                    </div>
-                                    <div class="offcanvas-body">
-                                        <div id="carouselProjet2" class="carousel slide carousel-fade h-100" data-bs-ride="carousel" data-bs-touch="true">
-                                            <div class="carousel-inner h-100 rounded-3">
-                                                <div class="carousel-item h-100 active" data-bs-interval="3000">
-                                                    <img src="assests/img/webD1.png" class="d-block w-100" alt="carte2">
-                                                    <div class="carousel-caption d-none d-md-block">
-                                                        <h5>Premier slide</h5>
-                                                        <p>Lorem ipsum dolor sit amet consectetur.</p>
-                                                    </div>
-                                                </div>
-                                                <div class="carousel-item h-100" data-bs-interval="3000">
-                                                    <img src="assests/img/webD2.png"d-block w-100" alt="carte2">
-                                                    <div class="carousel-caption d-none d-md-block">
-                                                        <h5>Deuxième slide</h5>
-                                                        <p>Lorem ipsum dolor sit amet consectetur.</p>
-                                                    </div>
-                                                </div>
-                                                <div class="carousel-item h-100" data-bs-interval="3000">
-                                                    <img src="assests/img/webD3.png" class="d-block w-100" alt="carte2">
-                                                    <div class="carousel-caption d-none d-md-block">
-                                                        <h5>Troisième slide</h5>
-                                                        <p>Lorem ipsum dolor sit amet consectetur.</p>
-                                                    </div>
+                        <div class="card text-light">
+                            <img src="https://picsum.photos/300/150?random=2" class="card-img" alt="carte2">
+                            <a href="#" class="text-light" data-bs-toggle="offcanvas"
+                            data-bs-target="#infoProjet2" aria-controls="infoProjet2">
+                                <div class="card-img-overlay bg-dark bg-opacity-50">
+                                    <h5 class="card-title">WebDesigner</h5>
+                                    <p class="card-text">CoOp Dev & WebD - Designed by Fiorina.</p>
+                                </div>
+                            </a>
+                            <div class="offcanvas offcanvas-bottom h-100" tabindex="-1" id="infoProjet2" 
+                            aria-labelledby="titleProjet2">
+                            <div class="offcanvas-header justify-content-between">
+                                <h5 class="offcanvas-title text-dark" id="titleProjet2">WebDesigner</h5>
+                                <a class="btn btn-outline-primary P2">Pour accéder au site c'est par ici !</a>
+                                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" 
+                                aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body">
+                                    <div id="carouselProjet2" class="carousel slide carousel-fade h-100" data-bs-ride="carousel" data-bs-touch="true">
+                                        <div class="carousel-inner h-100 rounded-3">
+                                            <div class="carousel-item h-100 active" data-bs-interval="3000">
+                                                <img src="assests/img/webD1.png" class="d-block w-100" alt="carte2">
+                                                <div class="carousel-caption d-none d-md-block">
+                                                    <h5>Premier slide</h5>
+                                                    <p>Lorem ipsum dolor sit amet consectetur.</p>
                                                 </div>
                                             </div>
-                                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselProjet2" 
-                                                data-bs-slide="prev">
-                                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                              <span class="visually-hidden">Previous</span>
-                                            </button>
-                                            <button class="carousel-control-next" type="button" data-bs-target="#carouselProjet2" 
-                                                data-bs-slide="next">
-                                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                              <span class="visually-hidden">Next</span>
-                                            </button>
-                                        </div>                                    
-                                    </div>
-                                </div>                            
-                            </div>
+                                            <div class="carousel-item h-100" data-bs-interval="3000">
+                                                <img src="assests/img/webD2.png"d-block w-100" alt="carte2">
+                                                <div class="carousel-caption d-none d-md-block">
+                                                    <h5>Deuxième slide</h5>
+                                                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item h-100" data-bs-interval="3000">
+                                                <img src="assests/img/webD3.png" class="d-block w-100" alt="carte2">
+                                                <div class="carousel-caption d-none d-md-block">
+                                                    <h5>Troisième slide</h5>
+                                                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselProjet2" 
+                                            data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button" data-bs-target="#carouselProjet2" 
+                                            data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
+                                    </div>                                    
+                                </div>
+                            </div>                            
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
                         <div class="card bg-dark text-light">
-                            <img src="assests/img/instCap1.png" class="card-img" alt="carte3">
-                            <div class="card-img-overlay bg-dark bg-opacity-50">
-                                <h5 class="card-title">InstantCafé</h5>
-                                <p class="card-text">Projet perso de dashboard en cours de construction.</p>
-                                <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" 
-                                    data-bs-target="#infoProjet3" aria-controls="infoProjet3">En savoir plus
-                                </button>
-                                <div class="offcanvas offcanvas-bottom h-100" tabindex="-1" id="infoProjet3" 
-                                    aria-labelledby="titleProjet3">
-                                    <div class="offcanvas-header">
-                                        <h5 class="offcanvas-title text-dark" id="titleProjet3">InstantCafé</h5>
-                                        <a class="btn btn-outline-primary P3">Pour accéder au site c'est par ici !</a>
-                                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                                    </div>
-                                    <div class="offcanvas-body">
-                                        <div id="carouselProjet3" class="carousel slide carousel-fade h-100" data-bs-ride="carousel" data-bs-touch="true">
-                                            <div class="carousel-inner h-100 rounded-3">
-                                                <div class="carousel-item h-100 active" data-bs-interval="3000">
-                                                    <img src="assests/img/instCap1.png" class="d-block w-100" alt="carte3">
-                                                    <div class="carousel-caption d-none d-md-block">
-                                                        <h5>Premier slide</h5>
-                                                        <p>Lorem ipsum dolor sit amet consectetur.</p>
-                                                    </div>
-                                                </div>
-                                                <div class="carousel-item h-100" data-bs-interval="3000">
-                                                    <img src="assests/img/instCap2.png" class="d-block w-100" alt="carte3">
-                                                    <div class="carousel-caption d-none d-md-block">
-                                                        <h5>Deuxième slide</h5>
-                                                        <p>Lorem ipsum dolor sit amet consectetur.</p>
-                                                    </div>
-                                                </div>
-                                                <div class="carousel-item h-100" data-bs-interval="3000">
-                                                    <img src="assests/img/instCap3.png" class="d-block w-100" alt="carte3">
-                                                    <div class="carousel-caption d-none d-md-block">
-                                                        <h5>Troisième slide</h5>
-                                                        <p>Lorem ipsum dolor sit amet consectetur.</p>
-                                                    </div>
+                            <img src="https://picsum.photos/300/150?random=3" class="card-img" alt="carte3">
+                            <a href="" href="#" class="text-light" data-bs-toggle="offcanvas"
+                            data-bs-target="#infoProjet3" aria-controls="infoProjet3">
+                                <div class="card-img-overlay bg-dark bg-opacity-50">
+                                    <h5 class="card-title">InstantCafé</h5>
+                                    <p class="card-text">Projet perso de dashboard en cours de construction.</p>
+                                </div>
+                            </a>
+                            <div class="offcanvas offcanvas-bottom h-100" tabindex="-1" id="infoProjet3" 
+                                aria-labelledby="titleProjet3">
+                                <div class="offcanvas-header">
+                                    <h5 class="offcanvas-title text-dark" id="titleProjet3">InstantCafé</h5>
+                                    <a class="btn btn-outline-primary P3">Pour accéder au site c'est par ici !</a>
+                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body">
+                                    <div id="carouselProjet3" class="carousel slide carousel-fade h-100" data-bs-ride="carousel" data-bs-touch="true">
+                                        <div class="carousel-inner h-100 rounded-3">
+                                            <div class="carousel-item h-100 active" data-bs-interval="3000">
+                                                <img src="assests/img/instCap1.png" class="d-block w-100" alt="carte3">
+                                                <div class="carousel-caption d-none d-md-block">
+                                                    <h5>Premier slide</h5>
+                                                    <p>Lorem ipsum dolor sit amet consectetur.</p>
                                                 </div>
                                             </div>
-                                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselProjet3" 
-                                                data-bs-slide="prev">
-                                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                              <span class="visually-hidden">Previous</span>
-                                            </button>
-                                            <button class="carousel-control-next" type="button" data-bs-target="#carouselProjet3" 
-                                                data-bs-slide="next">
-                                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                              <span class="visually-hidden">Next</span>
-                                            </button>
-                                        </div>                                    
-                                    </div>
-                                </div>                            
-                            </div>
+                                            <div class="carousel-item h-100" data-bs-interval="3000">
+                                                <img src="assests/img/instCap2.png" class="d-block w-100" alt="carte3">
+                                                <div class="carousel-caption d-none d-md-block">
+                                                    <h5>Deuxième slide</h5>
+                                                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item h-100" data-bs-interval="3000">
+                                                <img src="assests/img/instCap3.png" class="d-block w-100" alt="carte3">
+                                                <div class="carousel-caption d-none d-md-block">
+                                                    <h5>Troisième slide</h5>
+                                                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselProjet3" 
+                                            data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button" data-bs-target="#carouselProjet3" 
+                                            data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
+                                    </div>                                    
+                                </div>
+                            </div>                            
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-6 col-m-6 col-lg-4">
                         <div class="card bg-dark text-light">
                             <img src="https://picsum.photos/300/150?random=4" class="card-img" alt="carte4">
-                            <div class="card-img-overlay bg-dark bg-opacity-50">
-                                <h5 class="card-title">MyNote by Flask</h5>
-                                <p class="card-text">Gestionnaire de notes avec authentification et profil utilisateur - Directed by Quentin.</p>
-                                <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" 
-                                    data-bs-target="#infoProjet4" aria-controls="infoProjet4">En savoir plus
-                                </button>
-                                <div class="offcanvas offcanvas-bottom h-100" tabindex="-1" id="infoProjet4" 
-                                aria-labelledby="titleProjet4">
-                                    <div class="offcanvas-header">
-                                        <h5 class="offcanvas-title text-dark" id="titleProjet4">MyNote by AfloFlask</h5>
-                                        <a class="btn btn-outline-primary P4">Pour accéder au site c'est par ici !</a>
-                                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                                    </div>
-                                    <div class="offcanvas-body">
-                                        <div id="carouselProjet4" class="carousel slide carousel-fade h-100" data-bs-ride="carousel" data-bs-touch="true">
-                                            <div class="carousel-inner h-100 rounded-3">
-                                                <div class="carousel-item h-100 active" data-bs-interval="3000">
-                                                    <img src="https://picsum.photos/1920/1080?random=1" class="d-block w-100" alt="carte4">
-                                                    <div class="carousel-caption d-none d-md-block">
-                                                        <h5>Premier slide</h5>
-                                                        <p>Lorem ipsum dolor sit amet consectetur.</p>
-                                                    </div>
-                                                </div>
-                                                <div class="carousel-item h-100" data-bs-interval="3000">
-                                                    <img src="https://picsum.photos/1920/1080?random=2" class="d-block w-100" alt="carte4">
-                                                    <div class="carousel-caption d-none d-md-block">
-                                                        <h5>Deuxième slide</h5>
-                                                        <p>Lorem ipsum dolor sit amet consectetur.</p>
-                                                    </div>
-                                                </div>
-                                                <div class="carousel-item h-100" data-bs-interval="3000">
-                                                    <img src="https://picsum.photos/1920/1080?random=3" class="d-block w-100" alt="carte4">
-                                                    <div class="carousel-caption d-none d-md-block">
-                                                        <h5>Troisième slide</h5>
-                                                        <p>Lorem ipsum dolor sit amet consectetur.</p>
-                                                    </div>
+                            <a href="#" class="text-light" data-bs-toggle="offcanvas"
+                            data-bs-target="#infoProjet4" aria-controls="infoProjet4">
+                                <div class="card-img-overlay bg-dark bg-opacity-50">
+                                    <h5 class="card-title">MyNote by Flask</h5>
+                                    <p class="card-text">Gestionnaire de notes avec authentification et profil utilisateur - Directed by Quentin.</p>
+                                </div>
+                            </a>
+                            <div class="offcanvas offcanvas-bottom h-100" tabindex="-1" id="infoProjet4" 
+                            aria-labelledby="titleProjet4">
+                                <div class="offcanvas-header">
+                                    <h5 class="offcanvas-title text-dark" id="titleProjet4">MyNote by AfloFlask</h5>
+                                    <a class="btn btn-outline-primary P4">Pour accéder au site c'est par ici !</a>
+                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body">
+                                    <div id="carouselProjet4" class="carousel slide carousel-fade h-100" data-bs-ride="carousel" data-bs-touch="true">
+                                        <div class="carousel-inner h-100 rounded-3">
+                                            <div class="carousel-item h-100 active" data-bs-interval="3000">
+                                                <img src="https://picsum.photos/1920/1080?random=1" class="d-block w-100" alt="carte4">
+                                                <div class="carousel-caption d-none d-md-block">
+                                                    <h5>Premier slide</h5>
+                                                    <p>Lorem ipsum dolor sit amet consectetur.</p>
                                                 </div>
                                             </div>
-                                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselProjet4" 
-                                                data-bs-slide="prev">
-                                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                              <span class="visually-hidden">Previous</span>
-                                            </button>
-                                            <button class="carousel-control-next" type="button" data-bs-target="#carouselProjet4" 
-                                                data-bs-slide="next">
-                                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                              <span class="visually-hidden">Next</span>
-                                            </button>
-                                        </div>                                    
-                                    </div>
-                                </div>                            
-                            </div>
+                                            <div class="carousel-item h-100" data-bs-interval="3000">
+                                                <img src="https://picsum.photos/1920/1080?random=2" class="d-block w-100" alt="carte4">
+                                                <div class="carousel-caption d-none d-md-block">
+                                                    <h5>Deuxième slide</h5>
+                                                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item h-100" data-bs-interval="3000">
+                                                <img src="https://picsum.photos/1920/1080?random=3" class="d-block w-100" alt="carte4">
+                                                <div class="carousel-caption d-none d-md-block">
+                                                    <h5>Troisième slide</h5>
+                                                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselProjet4" 
+                                            data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button" data-bs-target="#carouselProjet4" 
+                                            data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
+                                    </div>                                    
+                                </div>
+                            </div>                            
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-6 col-m-6 col-lg-4">
                         <div class="card bg-dark text-light">
                             <img src="https://picsum.photos/300/150?random=5" class="card-img" alt="carte5">
-                            <div class="card-img-overlay bg-dark bg-opacity-50">
-                                <h5 class="card-title">Morpion Canvas</h5>
-                                <p class="card-text">Petit jeu du Morpion réalisé avec Javascript et des Canvas.</p>
-                                <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" 
-                                    data-bs-target="#infoProjet5" aria-controls="infoProjet5">En savoir plus
-                                </button>
-                                <div class="offcanvas offcanvas-bottom h-100" tabindex="-1" id="infoProjet5" 
-                                aria-labelledby="titleProjet5">
-                                    <div class="offcanvas-header">
-                                        <h5 class="offcanvas-title text-dark" id="titleProjet5">Morpion Canvas</h5>
-                                        <a class="btn btn-outline-primary P5">Pour accéder au site c'est par ici !</a>
-                                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                                    </div>
-                                    <div class="offcanvas-body">
-                                        <div id="carouselProjet5" class="carousel slide carousel-fade h-100" data-bs-ride="carousel" data-bs-touch="true">
-                                            <div class="carousel-inner h-100 rounded-3">
-                                                <div class="carousel-item h-100 active" data-bs-interval="3000">
-                                                    <img src="https://picsum.photos/1920/1080?random=1" class="d-block w-100" alt="carte5">
-                                                    <div class="carousel-caption d-none d-md-block">
-                                                        <h5>Premier slide</h5>
-                                                        <p>Lorem ipsum dolor sit amet consectetur.</p>
-                                                    </div>
-                                                </div>
-                                                <div class="carousel-item h-100" data-bs-interval="3000">
-                                                    <img src="https://picsum.photos/1920/1080?random=2" class="d-block w-100" alt="carte5">
-                                                    <div class="carousel-caption d-none d-md-block">
-                                                        <h5>Deuxième slide</h5>
-                                                        <p>Lorem ipsum dolor sit amet consectetur.</p>
-                                                    </div>
-                                                </div>
-                                                <div class="carousel-item h-100" data-bs-interval="3000">
-                                                    <img src="https://picsum.photos/1920/1080?random=3" class="d-block w-100" alt="carte5">
-                                                    <div class="carousel-caption d-none d-md-block">
-                                                        <h5>Troisième slide</h5>
-                                                        <p>Lorem ipsum dolor sit amet consectetur.</p>
-                                                    </div>
+                            <a href="#" class="text-light" data-bs-toggle="offcanvas"
+                            data-bs-target="#infoProjet5" aria-controls="infoProjet5">
+                                <div class="card-img-overlay bg-dark bg-opacity-50">
+                                    <h5 class="card-title">Morpion Canvas</h5>
+                                    <p class="card-text">Petit jeu du Morpion réalisé avec Javascript et des Canvas.</p>
+                                </div>
+                            </a>
+                            <div class="offcanvas offcanvas-bottom h-100" tabindex="-1" id="infoProjet5" 
+                            aria-labelledby="titleProjet5">
+                                <div class="offcanvas-header">
+                                    <h5 class="offcanvas-title text-dark" id="titleProjet5">Morpion Canvas</h5>
+                                    <a class="btn btn-outline-primary P5">Pour accéder au site c'est par ici !</a>
+                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body">
+                                    <div id="carouselProjet5" class="carousel slide carousel-fade h-100" data-bs-ride="carousel" data-bs-touch="true">
+                                        <div class="carousel-inner h-100 rounded-3">
+                                            <div class="carousel-item h-100 active" data-bs-interval="3000">
+                                                <img src="https://picsum.photos/1920/1080?random=1" class="d-block w-100" alt="carte5">
+                                                <div class="carousel-caption d-none d-md-block">
+                                                    <h5>Premier slide</h5>
+                                                    <p>Lorem ipsum dolor sit amet consectetur.</p>
                                                 </div>
                                             </div>
-                                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselProjet5" 
-                                                data-bs-slide="prev">
-                                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                              <span class="visually-hidden">Previous</span>
-                                            </button>
-                                            <button class="carousel-control-next" type="button" data-bs-target="#carouselProjet5" 
-                                                data-bs-slide="next">
-                                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                              <span class="visually-hidden">Next</span>
-                                            </button>
-                                        </div>                                    
-                                    </div>
-                                </div>                            
-                            </div>
+                                            <div class="carousel-item h-100" data-bs-interval="3000">
+                                                <img src="https://picsum.photos/1920/1080?random=2" class="d-block w-100" alt="carte5">
+                                                <div class="carousel-caption d-none d-md-block">
+                                                    <h5>Deuxième slide</h5>
+                                                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item h-100" data-bs-interval="3000">
+                                                <img src="https://picsum.photos/1920/1080?random=3" class="d-block w-100" alt="carte5">
+                                                <div class="carousel-caption d-none d-md-block">
+                                                    <h5>Troisième slide</h5>
+                                                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselProjet5" 
+                                            data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button" data-bs-target="#carouselProjet5" 
+                                            data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
+                                    </div>                                    
+                                </div>
+                            </div>                            
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-6 col-m-6 col-lg-4">
                         <div class="card bg-dark text-light">
                             <img src="https://picsum.photos/300/150?random=6" class="card-img" alt="carte6">
-                            <div class="card-img-overlay bg-dark bg-opacity-50">
-                                <h5 class="card-title">Projet 6</h5>
-                                <p class="card-text">Lorem ipsum dolor sit amet.</p>
-                                <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" 
-                                    data-bs-target="#infoProjet6" aria-controls="infoProjet6">En savoir plus
-                                </button>
+                            <a href="#" class="text-light" data-bs-toggle="offcanvas"
+                            data-bs-target="#infoProjet6" aria-controls="infoProjet6">
+                                <div class="card-img-overlay bg-dark bg-opacity-50">
+                                    <h5 class="card-title">Projet 6</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet.</p>
+                                </div>
+                            </a>
                                 <div class="offcanvas offcanvas-bottom h-100" tabindex="-1" id="infoProjet6" 
                                     aria-labelledby="titleProjet6">
                                     <div class="offcanvas-header">
@@ -584,7 +586,6 @@
                                         </div>                                    
                                     </div>
                                 </div>                            
-                            </div>
                         </div>
                     </div>
                 </div>
