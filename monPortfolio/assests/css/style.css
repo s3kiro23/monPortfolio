@@ -16,6 +16,15 @@
     color: black;
 }
 
+.card-hover{
+    transition: 0.2s ease-in-out 20ms;
+}
+
+.card-hover:hover{
+    box-shadow: 5px 5px 5px #a6adb4;
+    transform: scale(0.92);
+}
+
 .htmlColor {
     color: #ec6231;
 }
@@ -70,4 +79,45 @@
 
 .sqlColor-Bg {
     background-color: #00758F;
+}
+
+.cup{
+    height: 140px;
+    width: 180px;
+    border: 6px solid white;
+    border-radius: 0px 0px 70px 70px;
+    box-shadow: 0px 0px 0px 6px black;
+    animation: fill 5s infinite;
+    background: url(/assests/img/coffee.png);
+    background-repeat: repeat-x;
+    background-position: 0px 140px;
+}
+
+@keyframes fill{
+    0%{
+        background-position: 0px 140px;
+    }
+    20%{
+        background-position: -450px 100px;
+    }
+    40%{
+        background-position: -900px 50px;
+    }
+    80%{
+        background-position: -1350px -40px;
+    }
+    100%{
+        background-position: 0px 140px;
+    }
+}
+
+.handle{
+    height: 70px;
+    width: 40px;
+    position: relative;
+    background-color: transparent;
+    border: 6px solid black;
+    left: 175px;
+    top:1px;
+    border-radius: 0px 25px 80px 0px;
 }
