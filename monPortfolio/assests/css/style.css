@@ -81,6 +81,28 @@
     background-color: #00758F;
 }
 
+.tailColor {
+    color: #38bdf8;
+}
+
+.tailColor-Bg {
+    background-color: #38bdf8;
+}
+
+.jqueryColor {
+    color: #0769ad;
+}
+
+.jqueryColor-Bg {
+    background-color: #007db6;
+}
+
+.ajaxColor-Bg {
+    background-color: #016ec9;
+}
+
+
+
 .cup{
     height: 140px;
     width: 180px;
