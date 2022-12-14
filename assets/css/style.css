@@ -110,7 +110,7 @@
     border-radius: 0px 0px 70px 70px;
     box-shadow: 0px 0px 0px 6px black;
     animation: fill 5s infinite;
-    background: url(/assests/img/coffee.png);
+    background: url(/assets/img/coffee.png);
     background-repeat: repeat-x;
     background-position: 0px 140px;
 }
