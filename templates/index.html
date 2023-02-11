@@ -666,7 +666,11 @@
 						</div>
 						<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
 							<div class="card text-light card-hover">
-								<img src="../public/assets/img/webd.PNG" class="card-img" alt="carte2" />
+								<img
+									src="../public/assets/img/webd.PNG"
+									class="card-img"
+									alt="carte2"
+								/>
 								<a
 									href="https://webd-project.netlify.app"
 									target="_blank"
@@ -857,7 +861,11 @@
 						</div>
 						<div class="col-xs-12 col-sm-6 col-m-6 col-lg-4">
 							<div class="card card-hover text-light">
-								<img src="../public/assets/img/morp.PNG" class="card-img" alt="carte5" />
+								<img
+									src="../public/assets/img/morp.PNG"
+									class="card-img"
+									alt="carte5"
+								/>
 								<a
 									href="https://mcanvas.jmgeronimi.fr"
 									target="_blank"
@@ -917,7 +925,11 @@
 						</div>
 						<div class="col-xs-12 col-sm-6 col-m-6 col-lg-4">
 							<div class="card card-hover text-light">
-								<img src="../public/assets/img/hauto.PNG" class="card-img" alt="carte6" />
+								<img
+									src="../public/assets/img/hauto.PNG"
+									class="card-img"
+									alt="carte6"
+								/>
 								<a
 									href="https://hamsterauto.com"
 									target="_blank"
@@ -993,12 +1005,16 @@
 							</div>
 						</div>
 						<div class="col-12 col-md-6 offset-md-2">
-							<form action="" class="row gy-4">
+							<form
+								action="javascript:formContact();"
+								method="POST"
+								class="row gy-4"
+							>
 								<div class="col-6">
 									<label for="inputPrenom" class="form-label">Prénom</label>
 									<input
 										type="text"
-										class="form-control"
+										class="field form-control"
 										id="inputPrenom"
 										aria-describedby="prenomHelp"
 									/>
@@ -1007,7 +1023,7 @@
 									<label for="inputNom" class="form-label">Nom</label>
 									<input
 										type="text"
-										class="form-control"
+										class="field form-control"
 										id="inputNom"
 										aria-describedby="nomHelp"
 									/>
@@ -1018,7 +1034,7 @@
 									>
 									<input
 										type="email"
-										class="form-control"
+										class="field form-control"
 										id="inputEmail"
 										aria-describedby="emailHelp"
 									/>
@@ -1026,7 +1042,7 @@
 								<div class="col-12">
 									<label for="inputMessage" class="form-label">Message</label>
 									<textarea
-										class="form-control"
+										class="field form-control"
 										id="inputMessage"
 										rows="3"
 									></textarea>
@@ -1036,8 +1052,8 @@
 										<input
 											class="form-check-input"
 											type="checkbox"
-											value=""
 											id="flexCheckDefault"
+											required
 										/>
 										<label class="form-check-label" for="flexCheckDefault"
 											>En cochant cette case, vous acceptez les CGU du site.
@@ -1045,7 +1061,7 @@
 									</div>
 								</div>
 								<div class="col-3">
-									<button type="submit" class="btn btn-primary w-100">
+									<button type="submit" class="btn btn-primary w-100" id="btn-submit">
 										Envoyer
 									</button>
 								</div>
@@ -1173,9 +1189,11 @@
 			crossorigin="anonymous"
 		></script>
 		<script
-            src="https://code.jquery.com/jquery-3.6.0.min.js"
-            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-            crossorigin="anonymous"></script>
+			src="https://code.jquery.com/jquery-3.6.0.min.js"
+			integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+			crossorigin="anonymous"
+		></script>
+		<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 		<script src="../public/js/index.js"></script>
 		<script src="../public/js/backTopBtn.js"></script>
 		<!-- Font-awesome -->
