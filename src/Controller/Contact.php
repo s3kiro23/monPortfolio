@@ -1,6 +1,6 @@
 <?php
 
-require_once '../Entity/Mailing.php';
+require_once $_SERVER['DOCUMENT_ROOT'].'/src/Entity/Mailing.php';
 
 switch ($_POST['request']) {
 
