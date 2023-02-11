@@ -125,7 +125,7 @@
 	position: fixed;
 	bottom: 5%;
 	right: 5%;
-	display: block;
+	display: none;
 	transition: all 0.2s ease-in-out;
 }
 
