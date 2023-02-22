@@ -1,161 +1,186 @@
-*, ::after, ::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*,
+::after,
+::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 .fa-socials:hover {
-    color: #0275d8;
+	color: #0275d8;
 }
 
 .expHover:hover {
-    box-shadow: 10px 5px 5px #97999a;
+	box-shadow: 10px 5px 5px #97999a;
 }
 
-.hover-btn:hover{
-    color: black;
+.hover-btn:hover {
+	color: black;
 }
 
-.card-hover{
-    transition: 0.2s ease-in-out 20ms;
+.card-hover {
+	transition: 0.2s ease-in-out 20ms;
 }
 
-.card-hover:hover{
-    box-shadow: 5px 5px 5px #a6adb4;
-    transform: scale(0.92);
+.card-hover:hover {
+	box-shadow: 5px 5px 5px #a6adb4;
+	transform: scale(0.92);
 }
 
 .htmlColor {
-    color: #ec6231;
+	color: #ec6231;
 }
 
 .htmlColor-Bg {
-    background-color: #ec6231;
+	background-color: #ec6231;
 }
 
 .sassColor {
-    color: #cc6699;
+	color: #cc6699;
 }
 
 .sassColor-Bg {
-    background-color: #cc6699;
+	background-color: #cc6699;
 }
 
 .bsColor {
-    color: #563d7c;
+	color: #563d7c;
 }
 
 .bsColor-Bg {
-    background-color: #563d7c;
+	background-color: #563d7c;
 }
 
 .pyColor {
-    color: #306998;
+	color: #306998;
 }
 
 .pyColor-Bg {
-    background-color: #306998;
+	background-color: #306998;
 }
 
 .javaColor {
-    color: #f89820;
+	color: #f89820;
 }
 
 .javaColor-Bg {
-    background-color: #f89820;
+	background-color: #f89820;
 }
 
 .phpColor {
-    color: #787CB5;
+	color: #787cb5;
 }
 
 .phpColor-Bg {
-    background-color: #787CB5;
+	background-color: #787cb5;
 }
 
 .sqlColor {
-    color: #00758F;
+	color: #00758f;
 }
 
 .sqlColor-Bg {
-    background-color: #00758F;
+	background-color: #00758f;
 }
 
 .tailColor {
-    color: #38bdf8;
+	color: #38bdf8;
 }
 
 .tailColor-Bg {
-    background-color: #38bdf8;
+	background-color: #38bdf8;
 }
 
 .jqueryColor {
-    color: #0769ad;
+	color: #0769ad;
 }
 
 .jqueryColor-Bg {
-    background-color: #007db6;
+	background-color: #007db6;
 }
 
 .ajaxColor-Bg {
-    background-color: #016ec9;
+	background-color: #016ec9;
 }
 
 .SymColor-Bg {
-    background-color: black;
+	background-color: black;
 }
 
 .dockColor {
-    color: #00758F;
+	color: #00758f;
 }
 
 .dockerColor-Bg {
-    background-color: #00758F;
+	background-color: #00758f;
 }
 
 .twigColor-Bg {
-    background-color: #34a853;
+	background-color: #34a853;
 }
 
-
-
-.cup{
-    height: 140px;
-    width: 180px;
-    border: 6px solid white;
-    border-radius: 0px 0px 70px 70px;
-    box-shadow: 0px 0px 0px 6px black;
-    animation: fill 5s infinite;
-    background: url(/assets/img/coffee.png);
-    background-repeat: repeat-x;
-    background-position: 0px 140px;
+.navbar .navbar-nav .nav-item {
+	position: relative !important;
 }
 
-@keyframes fill{
-    0%{
-        background-position: 0px 140px;
-    }
-    20%{
-        background-position: -450px 100px;
-    }
-    40%{
-        background-position: -900px 50px;
-    }
-    80%{
-        background-position: -1350px -40px;
-    }
-    100%{
-        background-position: 0px 140px;
-    }
+.navbar .navbar-nav .nav-item::after {
+	position: absolute !important;
+	bottom: 0.5rem;
+	left: 0.5rem;
+	right: 0;
+	content: "" !important;
+	background-color: #db5100 !important;
+	width: 0 !important;
+	height: 2px !important;
+	border-radius: 5px !important;
+	transition: all 0.5s !important;
 }
 
-.handle{
-    height: 70px;
-    width: 40px;
-    position: relative;
-    background-color: transparent;
-    border: 6px solid black;
-    left: 175px;
-    top:1px;
-    border-radius: 0px 25px 80px 0px;
+.navbar .navbar-nav .nav-item:hover::after {
+	width: 85% !important;
+}
+
+.cup {
+	height: 140px;
+	width: 180px;
+	border: 6px solid white;
+	border-radius: 0px 0px 70px 70px;
+	box-shadow: 0px 0px 0px 6px black;
+	animation: fill 5s infinite;
+	background: url(/assets/img/coffee.png);
+	background-repeat: repeat-x;
+	background-position: 0px 140px;
+}
+
+@keyframes fill {
+	0% {
+		background-position: 0px 140px;
+	}
+
+	20% {
+		background-position: -450px 100px;
+	}
+
+	40% {
+		background-position: -900px 50px;
+	}
+
+	80% {
+		background-position: -1350px -40px;
+	}
+
+	100% {
+		background-position: 0px 140px;
+	}
+}
+
+.handle {
+	height: 70px;
+	width: 40px;
+	position: relative;
+	background-color: transparent;
+	border: 6px solid black;
+	left: 175px;
+	top: 1px;
+	border-radius: 0px 25px 80px 0px;
 }
