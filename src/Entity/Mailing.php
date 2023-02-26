@@ -15,33 +15,31 @@ class Mailing
       try {
          //Server settings
          /*$mail->SMTPDebug = SMTP::DEBUG_SERVER;            //Enable verbose debug output*/
+
+         //Config OVH mail
          $mail->isSMTP();                                    //Send using SMTP
-         $mail->Host = 'smtp.gmail.com';                     //Set the SMTP server to send through
+         $mail->Host = 'ssl0.ovh.net';                     //Set the SMTP server to send through
          $mail->SMTPAuth = true;                             //Enable SMTP authentication
-         $mail->Username = 'shadow.s3kir0@gmail.com';        //SMTP username
-         $mail->Password = 'ivjakmgdpgarxgrp';               //SMTP password
-         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS; //Enable implicit TLS encryption
-         $mail->Port = 587;                                  //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
+         $mail->Username = 'contact@jmgeronimi.fr';        //SMTP username
+         $mail->Password = 'dS#AM8yKZw2QCh58';               //SMTP password
+         $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS; //Enable implicit TLS encryption
+         $mail->Port = 465;                                  //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
          $mail->CharSet = 'UTF-8';                           //Format d'encodage à utiliser pour les caractères
+         $mail->Encoding = 'base64';
 
          //Recipients
-         $mail->setFrom('contact@outlook.fr', 'monPortfolio');
-         /*    $mail->addAddress('joe@example.net', 'Joe User');*/     //Add a recipient
-         /*    $mail->addAddress($client->getEmail_user());            //Name is optional*/
+         $mail->setFrom('contact@jmgeronimi.fr', 'monPortfolio');
          $mail->addAddress($data['mail']);           //Name is optional
          if (isset($data['reply']) && !empty($data['reply'])) {
             $mail->addReplyTo($data['reply'], 'Information');
          }
          $mail->addReplyTo('no-reply@jmgeronimi.fr', 'Information');
-         /*    $mail->addCC('cc@example.com');
-                $mail->addBCC('bcc@example.com');*/
          if (isset($data['attachment']) && !empty($data['attachment'])) {
             $mail->addAttachment("../" . $data['attachment']);
          }
 
          $mail->isHTML(true);     //Set email format to HTML
          $mail->Subject = $data['subject'];
-         // $mail->AddEmbeddedImage("../../public/assets/img/logoDark.png", "logo", "logoDark.png");
          $mail->Body = $data['body'];
          $mail->send();
       } catch (Exception $e) {
