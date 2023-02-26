@@ -1,0 +1,7 @@
+Options +FollowSymLinks -MultiViews
+
+RewriteEngine On
+
+RewriteBase /
+
+RewriteRule ^/?$ /templates/index.html [L,NC]
