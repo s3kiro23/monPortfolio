@@ -30,13 +30,10 @@ class Mailing
          //Recipients
          $mail->setFrom('contact@jmgeronimi.fr', 'monPortfolio');
          $mail->addAddress($data['mail']);           //Name is optional
-         if (isset($data['reply']) && !empty($data['reply'])) {
-            $mail->addReplyTo($data['reply'], 'Information');
-         }
-         $mail->addReplyTo('no-reply@jmgeronimi.fr', 'Information');
-         if (isset($data['attachment']) && !empty($data['attachment'])) {
-            $mail->addAttachment("../" . $data['attachment']);
-         }
+         $mail->addReplyTo($data['reply'], 'Information');
+         // if (isset($data['attachment']) && !empty($data['attachment'])) {
+         //    $mail->addAttachment("../" . $data['attachment']);
+         // }
 
          $mail->isHTML(true);     //Set email format to HTML
          $mail->Subject = $data['subject'];
