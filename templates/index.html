@@ -1,9 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!--=============== BOXICONS ===============-->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+		/>
 		<!-- BootStrap -->
 		<link
 			href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
@@ -36,99 +41,84 @@
 		<meta name="theme-color" content="#ffffff" />
 		<title>monPortfolio</title>
 	</head>
-
 	<body
 		class="bg-white scrollspy-example"
 		data-bs-spy="scroll"
-		data-bs-target="#navbar"
+		data-bs-target="#nav-menu"
 		data-bs-offset="0"
 		tabindex="0"
 	>
-		<header class="py-4">
-			<nav
-				class="autohide navbar navbar-expand-md bg-light navbar-light fixed-top border-bottom"
-			>
-				<div id="navbar" class="container">
-					<a
-						class="navbar-brand text-decoration-none text-dark text-uppercase fw-bold"
-						href="index.html"
+		<!--=============== HEADER ===============-->
+		<header class="header" id="header">
+			<nav class="nav container">
+				<a class="navbar-brand text-dark text-uppercase fw-bold ms-3" href="#">
+					<span class="bg-primary bg-gradient p-1 rounded-3 text-light"
+						>Jean Marie</span
 					>
-						<span class="bg-primary bg-gradient p-1 rounded-3 text-light"
-							>Jean Marie</span
-						>
-						Geronimi
-					</a>
-					<button
-						class="navbar-toggler"
-						type="button"
-						data-bs-toggle="collapse"
-						data-bs-target="#navbarNav"
-						aria-controls="navbarNav"
-						aria-expanded="false"
-						aria-label="Toggle Navbar"
-					>
-						<span class="navbar-toggler-icon"></span>
-					</button>
-					<div
-						class="collapse navbar-collapse justify-content-end"
-						id="navbarNav"
-					>
-						<ul class="navbar-nav">
-							<li class="nav-item">
-								<a class="nav-link" href="#qui-suis-je"> Qui suis-je ? </a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#expertises">Expertises</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#portofolio">Portfolio</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#contact">Contact</a>
-							</li>
-						</ul>
-					</div>
+					Geronimi
+				</a>
+				<div class="nav__menu" id="nav-menu">
+					<ul class="nav__list ps-0 mb-0">
+						<li class="nav__item">
+							<a href="#home" class="nav__link">
+								<i class="bx bx-home-alt nav__icon"></i>
+								<span class="nav__name">Qui suis-je ?</span>
+							</a>
+						</li>
+						<li class="nav__item exp">
+							<a href="#skills" class="nav__link">
+								<i class="bx bx-user nav__icon"></i>
+								<span class="nav__name">Expertises</span>
+							</a>
+						</li>
+						<li class="nav__item folio">
+							<a href="#portfolio" class="nav__link">
+								<i class="bx bx-book-alt nav__icon"></i>
+								<span class="nav__name">Portfolio</span>
+							</a>
+						</li>
+						<li class="nav__item contact">
+							<a href="#contactme" class="nav__link">
+								<i class="bx bx-briefcase-alt nav__icon"></i>
+								<span class="nav__name">Contact</span>
+							</a>
+						</li>
+					</ul>
 				</div>
+				<img src="../public/assets/img/profil.jpg" alt="" class="nav__img" />
 			</nav>
-			<span id="qui-suis-je"></span>
 		</header>
 		<main>
-			<section class="my-5">
+			<section class="my-0 my-md-5" id="home">
 				<div class="container">
 					<div class="row gy-4 align-items-center">
 						<div class="col-12 col-md-6">
-							<h1 class="fw-bold my-4 my-md-4">
+							<h2 class="fw-bold mb-4">
 								Etudiant en développement d'applications Web & mobiles
-							</h1>
-							<p class="fw-light fs-3">
+							</h2>
+							<p class="fw-light fs-4">
 								Issue d'une formation en gestion d’infrastructure Informatique
 								et fort de diverses expériences dans la réflexion et le
 								déploiement de SI, je m'engage à présent dans le domaine du
 								développement web afin de parfaire mes connaissances et de créer
 								des outils aux services des entreprises.
 							</p>
-							<a
-								href="#expertises"
-								class="d-flex justify-content-center btn btn-outline-primary my-5 mb-md-5 mb-md-0 expHover"
-								>Mon expertise Web</a
-							>
 						</div>
 						<div class="col col-md text-center">
 							<img
-								class="rounded-3 shadow"
+								class="rounded-3 shadow section-img"
 								src="../public/assets/img/profil.jpg"
 								alt="code"
 								width="60%"
 							/>
 						</div>
-						<span id="expertises"></span>
 					</div>
 				</div>
 			</section>
-			<section class="py-5 bg-light">
+			<section class="py-5 bg-light" id="skills">
 				<div class="container">
 					<h2 class="fw-bold">Mon expertise</h2>
-					<h3 class="fw-light">Développement web</h3>
+					<h4 class="fw-light">Développement web</h4>
 					<div class="row mt-4 gy-4 align-items-center">
 						<div class="col-12 col-md-7">
 							<div class="mb-3 p-3 bg-white shadow rounded-3">
@@ -217,7 +207,7 @@
 												aria-valuenow="75"
 												aria-valuemin="0"
 												aria-valuemax="100"
-												style="width: 55%"
+												style="width: 75%"
 											></div>
 										</div>
 									</div>
@@ -259,7 +249,7 @@
 												aria-valuenow="75"
 												aria-valuemin="0"
 												aria-valuemax="100"
-												style="width: 30%"
+												style="width: 45%"
 											></div>
 										</div>
 									</div>
@@ -443,23 +433,6 @@
 									</div>
 								</div>
 							</div>
-							<!-- <div class="mb-3 p-3 bg-white shadow rounded-3">
-                        <div class="row align-items-center">
-                            <div class="col-5 col-sm-4 col-md-5 col-lg-4 col-xl-3">
-                                <div class="d-flex align-items-center">
-                                    <i class="fa-brands fa-sass fa-2x me-3 sassColor"></i>                                        
-                                    <p class="fw-bold m-0">SASS</p>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="progress">
-                                    <div class="progress-bar progress-bar-striped progress-bar-animated sassColor-Bg" 
-                                    role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" 
-                                    style="width: 5%"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
 						</div>
 						<div class="col-12 col-md-4 offset-md-1">
 							<img
@@ -574,429 +547,305 @@
 									</div>
 								</div>
 							</div>
-							<!--<div class="mb-3 p-3 bg-white shadow rounded-3">
-                        <div class="row align-items-center">
-                            <div class="col-5 col-sm-4 col-md-5 col-lg-4 col-xl-3">
-                                <div class="d-flex align-items-center">
-                                    <i class="fa-solid fa-database fa-1x me-3 sqlColor"></i>
-                                    <p class="fw-bold m-0">SQL</p>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="progress">
-                                    <div class="progress-bar sqlColor-Bg"
-                                         role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
-                                         style="width: 60%"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>-->
 						</div>
 					</div>
 				</div>
+				<span id="portfolio"></span>
 			</section>
-			<section class="py-5">
+			<section class="py-5" id="portfolio">
 				<div class="container">
 					<h2 class="fw-bold">Mon portfolio</h2>
-					<h3 class="fw-light fs-5">Projets perso et pro</h3>
+					<h4 class="fw-light">Projets personnelles</h4>
 					<div class="row mt-4 gy-4 gy-md-4">
 						<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
-							<div class="card card-hover text-light P1">
-								<img
-									src="../public/assets/img/icescream.PNG"
-									class="card-img"
-									alt="carte1"
-								/>
-								<a
-									href="https://icescream.jmgeronimi.fr"
-									target="_blank"
-									class="text-light"
-								>
-									<div class="card-img-overlay bg-dark bg-opacity-50">
-										<h5 class="card-title">IceScream</h5>
-										<p class="card-text">Initiation à Javascript glacée!</p>
+							<div class="flip-card">
+								<div class="flip-card-inner">
+									<div
+										class="flip-card-front p-3 text-start shadow bg-icescream rounded"
+									>
+										<h3>IceScream</h3>
+										<h5>Initiation à Javascript glacée !</h5>
 									</div>
-								</a>
-								<!-- <div class="offcanvas offcanvas-bottom h-100" tabindex="-1" id="infoProjet1"
-                            aria-labelledby="titleProjet1">
-                            <div class="offcanvas-header">
-                                <h5 class="offcanvas-title text-dark" id="titleProjet1">IceScream</h5>
-                                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
-                                    aria-label="Close">
-                                </button>
-                            </div>
-                            <div class="container">
-                                <div class="row">
-                                    <a class="col-xs-8 col-md-3 col-lg-3 offset-md-2 offset-lg-2 gy-4 gy-md-0 btn btn-outline-primary P1">Accès au site ici !</a>
-                                    <a class="col-xs-8 col-md-3 col-lg-3 offset-md-2 offset-lg-2 gy-4 gy-md-0 btn btn-outline-success C1"><i class="fa-solid fa-code"></i></a>
-                                </div>
-                            </div>
-                            <div class="offcanvas-body">
-                                <div id="IceScream" class="carousel slide carousel-fade h-100" data-bs-ride="carousel" data-bs-touch="true">
-                                    <div class="carousel-indicators">
-                                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                    </div>
-                                    <div class="carousel-inner h-100 rounded-3">
-                                        <div class="carousel-item h-100 active" data-bs-interval="3000">
-                                            <img src="https://picsum.photos/1920/1080?random=1" class="d-block w-100" alt="carte1">
-                                        </div>
-                                        <div class="carousel-item h-100" data-bs-interval="3000">
-                                            <img src="https://picsum.photos/1920/1080?random=2" class="d-block w-100" alt="carte1">
-                                        </div>
-                                        <div class="carousel-item h-100" data-bs-interval="3000">
-                                            <img src="https://picsum.photos/1920/1080?random=3" class="d-block w-100" alt="carte1">
-                                        </div>
-                                    </div>
-                                    <button class="carousel-control-prev" type="button" data-bs-target="#IceScream"
-                                        data-bs-slide="prev">
-                                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                      <span class="visually-hidden">Previous</span>
-                                    </button>
-                                    <button class="carousel-control-next" type="button" data-bs-target="#IceScream"
-                                        data-bs-slide="next">
-                                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                      <span class="visually-hidden">Next</span>
-                                    </button>
-                                </div>
-                            </div>
-                        </div> -->
+									<div class="flip-card-back p-3 shadow text-start rounded">
+										<div class="row h-100">
+											<div class="col-12 col-md-8">
+												<div>
+													<h3>Description</h3>
+													<p>Petit projet d'initiation à Javascript</p>
+												</div>
+												<div>
+													<h3>Langages utilisés</h3>
+													<div class="d-flex gap-3 mt-3">
+														<i class="fa-brands fa-html5 fa-2x htmlColor"></i>
+														<i
+															class="fa-brands fa-css3-alt fa-2x text-primary"
+														></i>
+														<i
+															class="fa-brands fa-js-square fa-2x text-warning"
+														></i>
+													</div>
+												</div>
+											</div>
+											<div class="col text-end align-self-end">
+												<a
+													href="https://icescream.jmgeronimi.fr"
+													target="_blank"
+												>
+													<button class="btn btn-outline-primary">
+														Visiter
+													</button>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
 						<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
-							<div class="card text-light card-hover">
-								<img
-									src="../public/assets/img/webd.PNG"
-									class="card-img"
-									alt="carte2"
-								/>
-								<a
-									href="https://webd-project.netlify.app"
-									target="_blank"
-									class="text-light"
-								>
-									<div class="card-img-overlay bg-dark bg-opacity-50">
-										<h5 class="card-title">WebDesigner</h5>
-										<p class="card-text">
-											CoOp Dev & WebD - Designed by Fiorina.
-										</p>
+							<div class="flip-card">
+								<div class="flip-card-inner">
+									<div
+										class="flip-card-front p-3 text-start shadow bg-webd rounded"
+									>
+										<h3>WebDesigner</h3>
+										<h5>Collaboration entre Dev & WebD Aflokkat</h5>
+										<span>Designed by Fiorina.</span>
 									</div>
-								</a>
-								<!-- <div class="offcanvas offcanvas-bottom h-100" tabindex="-1" id="infoProjet2"
-                        aria-labelledby="titleProjet2">
-                        <div class="offcanvas-header">
-                            <h5 class="offcanvas-title text-dark" id="titleProjet2">WebDesigner</h5>
-                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
-                            aria-label="Close"></button>
-                        </div>
-                        <div class="container">
-                            <div class="row">
-                                <a class="col-xs-8 col-md-3 col-lg-3 offset-md-2 offset-lg-2 gy-4 gy-md-0 btn btn-outline-primary P1">Accès au site ici !</a>
-                                <a class="col-xs-8 col-md-3 col-lg-3 offset-md-2 offset-lg-2 gy-4 gy-md-0 btn btn-outline-success C1"><i class="fa-solid fa-code"></i></a>
-                            </div>
-                        </div>
-                            <div class="offcanvas-body">
-                                <div id="carouselProjet2" class="carousel slide carousel-fade h-100" data-bs-ride="carousel" data-bs-touch="true">
-                                    <div class="carousel-indicators">
-                                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                    </div>
-                                    <div class="carousel-inner h-100 rounded-3">
-                                        <div class="carousel-item h-100 active" data-bs-interval="3000">
-                                            <img src="../public/assets/img/webD1.png" class="d-block w-100" alt="carte2">
-                                        </div>
-                                        <div class="carousel-item h-100" data-bs-interval="3000">
-                                            <img src="../public/assets/img/webD2.png"d-block w-100" alt="carte2">
-                                        </div>
-                                        <div class="carousel-item h-100" data-bs-interval="3000">
-                                            <img src="../public/assets/img/webD3.png" class="d-block w-100" alt="carte2">
-                                        </div>
-                                    </div>
-                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselProjet2"
-                                        data-bs-slide="prev">
-                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                        <span class="visually-hidden">Previous</span>
-                                    </button>
-                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselProjet2"
-                                        data-bs-slide="next">
-                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                        <span class="visually-hidden">Next</span>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>                             -->
+									<div class="flip-card-back p-3 shadow text-start rounded">
+										<div class="row h-100">
+											<div class="col-12">
+												<h3>Description</h3>
+												<p class="text-justify">
+													Pages statiques en collaboration avec les WebDesigner
+													de l'école ESIA d'Aflokkat.
+												</p>
+											</div>
+											<div class="col-8">
+												<h3>Langages utilisés</h3>
+												<div class="d-flex gap-3 mt-3">
+													<i class="fa-brands fa-html5 fa-2x htmlColor"></i>
+													<i
+														class="fa-brands fa-css3-alt fa-2x text-primary"
+													></i>
+													<i
+														class="fa-brands fa-js-square fa-2x text-warning"
+													></i>
+												</div>
+											</div>
+											<div class="col text-end align-self-end">
+												<a
+													href="https://webd-project.netlify.app"
+													target="_blank"
+												>
+													<button class="btn btn-outline-primary">
+														Visiter
+													</button>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
 						<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
-							<div class="card text-light card-hover">
-								<img
-									src="../public/assets/img/instantkf.PNG"
-									class="card-img"
-									alt="carte3"
-								/>
-								<a
-									href="https://instantcafe.fun"
-									target="_blank"
-									class="text-light"
-								>
-									<div class="card-img-overlay bg-dark bg-opacity-50">
-										<h5 class="card-title">InstantCafé</h5>
-										<p class="card-text">
-											Projet perso de dashboard en cours de construction.
-										</p>
+							<div class="flip-card">
+								<div class="flip-card-inner">
+									<div
+										class="flip-card-front p-3 text-start shadow bg-instantkf rounded"
+									>
+										<h3>InstantCafé</h3>
+										<h5>Projet perso de dashboard en cours de construction.</h5>
 									</div>
-								</a>
-								<!-- <div class="offcanvas offcanvas-bottom h-100" tabindex="-1" id="infoProjet3"
-                            aria-labelledby="titleProjet3">
-                            <div class="offcanvas-header">
-                                <h5 class="offcanvas-title text-dark" id="titleProjet3">InstantCafé</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                            </div>
-                            <div class="container">
-                                <div class="row">
-                                    <a class="col-xs-8 col-md-3 col-lg-3 offset-md-2 offset-lg-2 gy-4 gy-md-0 btn btn-outline-primary P1">Accès au site ici !</a>
-                                    <a class="col-xs-8 col-md-3 col-lg-3 offset-md-2 offset-lg-2 gy-4 gy-md-0 btn btn-outline-success C1"><i class="fa-solid fa-code"></i></a>
-                                </div>
-                            </div>
-                            <div class="offcanvas-body">
-                                <div id="carouselProjet3" class="carousel slide carousel-fade h-100" data-bs-ride="carousel" data-bs-touch="true">
-                                    <div class="carousel-indicators">
-                                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                    </div>
-                                    <div class="carousel-inner h-100 rounded-3">
-                                        <div class="carousel-item h-100 active" data-bs-interval="3000">
-                                            <img src="../public/assets/img/instCap1.png" class="d-block w-100" alt="carte3">
-                                        </div>
-                                        <div class="carousel-item h-100" data-bs-interval="3000">
-                                            <img src="../public/assets/img/instCap2.png" class="d-block w-100" alt="carte3">
-                                        </div>
-                                        <div class="carousel-item h-100" data-bs-interval="3000">
-                                            <img src="../public/assets/img/instCap3.png" class="d-block w-100" alt="carte3">
-                                        </div>
-                                    </div>
-                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselProjet3"
-                                        data-bs-slide="prev">
-                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                        <span class="visually-hidden">Previous</span>
-                                    </button>
-                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselProjet3"
-                                        data-bs-slide="next">
-                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                        <span class="visually-hidden">Next</span>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>                             -->
+									<div class="flip-card-back p-3 shadow text-start rounded">
+										<div class="row h-100">
+											<div class="col-12">
+												<h3>Description</h3>
+												<p>
+													L'un de mes premiers projets d'initiation au
+													développement...
+												</p>
+											</div>
+											<div class="col-8">
+												<h3>Langages utilisés</h3>
+												<div class="d-flex gap-3 mt-3">
+													<i class="fa-brands fa-html5 fa-2x htmlColor"></i>
+													<i
+														class="fa-brands fa-css3-alt fa-2x text-primary"
+													></i>
+													<i
+														class="fa-brands fa-js-square fa-2x text-warning"
+													></i>
+												</div>
+											</div>
+											<div class="col text-end align-self-end">
+												<a href="https://instantcafe.fun" target="_blank">
+													<button class="btn btn-outline-primary">
+														Visiter
+													</button>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
 						<div class="col-xs-12 col-sm-6 col-m-6 col-lg-4">
-							<div class="card text-light card-hover">
-								<img
-									src="../public/assets/img/flask.PNG"
-									class="card-img"
-									alt="flask-app"
-								/>
-								<a
-									href="https://mynote.jmgeronimi.fr/"
-									target="_blank"
-									class="text-light"
-								>
-									<div class="card-img-overlay bg-dark bg-opacity-50">
-										<h5 class="card-title">MyNote by Flask</h5>
-										<p class="card-text">
-											Projet réalisé en Python avec le framework Flask. <br />
-											Gestionnaire de notes avec authentification et profil
-											utilisateur
-										</p>
+							<div class="flip-card">
+								<div class="flip-card-inner">
+									<div
+										class="flip-card-front p-3 text-start shadow bg-flask rounded"
+									>
+										<h3>MyNote</h3>
+										<h5>Projet réalisé en Python avec le framework Flask.</h5>
 									</div>
-								</a>
-								<!-- <div class="offcanvas offcanvas-bottom h-100" tabindex="-1" id="infoProjet4"
-                        aria-labelledby="titleProjet4">
-                            <div class="offcanvas-header">
-                                <h5 class="offcanvas-title text-dark" id="titleProjet4">MyNote by AfloFlask</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                            </div>
-                            <div class="container">
-                                <div class="row">
-                                    <a class="col-xs-8 col-md-3 col-lg-3 offset-md-2 offset-lg-2 gy-4 gy-md-0 btn btn-outline-primary P1">Accès au site ici !</a>
-                                    <a class="col-xs-8 col-md-3 col-lg-3 offset-md-2 offset-lg-2 gy-4 gy-md-0 btn btn-outline-success C1"><i class="fa-solid fa-code"></i></a>
-                                </div>
-                            </div>
-                            <div class="offcanvas-body">
-                                <div id="carouselProjet4" class="carousel slide carousel-fade h-100" data-bs-ride="carousel" data-bs-touch="true">
-                                    <div class="carousel-indicators">
-                                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                    </div>
-                                    <div class="carousel-inner h-100 rounded-3">
-                                        <div class="carousel-item h-100 active" data-bs-interval="3000">
-                                            <img src="https://picsum.photos/1920/1080?random=1" class="d-block w-100" alt="carte4">
-                                        </div>
-                                        <div class="carousel-item h-100" data-bs-interval="3000">
-                                            <img src="https://picsum.photos/1920/1080?random=2" class="d-block w-100" alt="carte4">
-                                        </div>
-                                        <div class="carousel-item h-100" data-bs-interval="3000">
-                                            <img src="https://picsum.photos/1920/1080?random=3" class="d-block w-100" alt="carte4">
-                                        </div>
-                                    </div>
-                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselProjet4"
-                                        data-bs-slide="prev">
-                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                        <span class="visually-hidden">Previous</span>
-                                    </button>
-                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselProjet4"
-                                        data-bs-slide="next">
-                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                        <span class="visually-hidden">Next</span>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>                             -->
+									<div class="flip-card-back p-3 shadow text-start rounded">
+										<div class="row h-100">
+											<div class="col-12">
+												<h3>Description</h3>
+												<p>
+													Gestionnaire de notes avec authentification et profil
+													utilisateur.
+												</p>
+											</div>
+											<div class="col-8">
+												<h3>Langages utilisés</h3>
+												<div class="d-flex gap-3 mt-3">
+													<i class="fa-brands fa-html5 fa-2x htmlColor"></i>
+													<i
+														class="fa-brands fa-css3-alt fa-2x text-primary"
+													></i>
+													<i
+														class="fa-brands fa-js-square fa-2x text-warning"
+													></i>
+													<i
+														class="fa-brands fa-python fa-2x"
+														style="color: #4584b6"
+													></i>
+												</div>
+											</div>
+											<div class="col text-end align-self-end">
+												<a href="https://mynote.jmgeronimi.fr/" target="_blank">
+													<button class="btn btn-outline-primary">
+														Visiter
+													</button>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
 						<div class="col-xs-12 col-sm-6 col-m-6 col-lg-4">
-							<div class="card card-hover text-light">
-								<img
-									src="../public/assets/img/morp.PNG"
-									class="card-img"
-									alt="carte5"
-								/>
-								<a
-									href="https://mcanvas.jmgeronimi.fr"
-									target="_blank"
-									class="text-light"
-								>
-									<div class="card-img-overlay bg-dark bg-opacity-50">
-										<h5 class="card-title">Morpion Canvas</h5>
-										<p class="card-text">
-											Petit jeu du Morpion réalisé en JS et Canvas.
-										</p>
+							<div class="flip-card">
+								<div class="flip-card-inner">
+									<div
+										class="flip-card-front p-3 text-start shadow bg-morpion rounded"
+									>
+										<h3>Morpion Canvas</h3>
+										<h5>Petit jeu du Morpion réalisé en JS et Python.</h5>
 									</div>
-								</a>
-								<!-- <div class="offcanvas offcanvas-bottom h-100" tabindex="-1" id="infoProjet5"
-                        aria-labelledby="titleProjet5">
-                            <div class="offcanvas-header">
-                                <h5 class="offcanvas-title text-dark" id="titleProjet5">Morpion Canvas</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                            </div>
-                            <div class="container">
-                                <div class="row">
-                                    <a class="col-xs-8 col-md-3 col-lg-3 offset-md-2 offset-lg-2 gy-4 gy-md-0 btn btn-outline-primary P1">Accès au site ici !</a>
-                                    <a class="col-xs-8 col-md-3 col-lg-3 offset-md-2 offset-lg-2 gy-4 gy-md-0 btn btn-outline-success C1"><i class="fa-solid fa-code"></i></a>
-                                </div>
-                            </div>
-                            <div class="offcanvas-body">
-                                <div id="carouselProjet5" class="carousel slide carousel-fade h-100" data-bs-ride="carousel" data-bs-touch="true">
-                                    <div class="carousel-indicators">
-                                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                    </div>
-                                    <div class="carousel-inner h-100 rounded-3">
-                                        <div class="carousel-item h-100 active" data-bs-interval="3000">
-                                            <img src="https://picsum.photos/1920/1080?random=1" class="d-block w-100" alt="carte5">
-                                        </div>
-                                        <div class="carousel-item h-100" data-bs-interval="3000">
-                                            <img src="https://picsum.photos/1920/1080?random=2" class="d-block w-100" alt="carte5">
-                                        </div>
-                                        <div class="carousel-item h-100" data-bs-interval="3000">
-                                            <img src="https://picsum.photos/1920/1080?random=3" class="d-block w-100" alt="carte5">
-                                        </div>
-                                    </div>
-                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselProjet5"
-                                        data-bs-slide="prev">
-                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                        <span class="visually-hidden">Previous</span>
-                                    </button>
-                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselProjet5"
-                                        data-bs-slide="next">
-                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                        <span class="visually-hidden">Next</span>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>                             -->
+									<div class="flip-card-back p-3 shadow text-start rounded">
+										<div class="row h-100">
+											<div class="col-12">
+												<h3>Description</h3>
+												<p>
+													Tester vos talents au jeu du Morpion face à un
+													programme !
+												</p>
+											</div>
+											<div class="col-8">
+												<h3>Langages utilisés</h3>
+												<div class="d-flex gap-3 mt-3">
+													<i class="fa-brands fa-html5 fa-2x htmlColor"></i>
+													<i
+														class="fa-brands fa-css3-alt fa-2x text-primary"
+													></i>
+													<i
+														class="fa-brands fa-js-square fa-2x text-warning"
+													></i>
+													<i
+														class="fa-brands fa-python fa-2x"
+														style="color: #4584b6"
+													></i>
+												</div>
+											</div>
+											<div class="col text-end align-self-end">
+												<a href="https://mcanvas.jmgeronimi.fr" target="_blank">
+													<button class="btn btn-outline-primary">
+														Visiter
+													</button>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
 						<div class="col-xs-12 col-sm-6 col-m-6 col-lg-4">
-							<div class="card card-hover text-light">
-								<img
-									src="../public/assets/img/hauto.PNG"
-									class="card-img"
-									alt="carte6"
-								/>
-								<a
-									href="https://hamsterauto.com"
-									target="_blank"
-									class="text-light"
-								>
-									<div class="card-img-overlay bg-dark bg-opacity-50">
-										<h5 class="card-title">HamsterAuto by Team FromScratch</h5>
-										<p class="card-text">
-											Projet de fin d'étude Bac+2 ESIA Aflokkat en collaboration
-											avec Mr Pierre GUIDERDONI.
-										</p>
+							<div class="flip-card">
+								<div class="flip-card-inner">
+									<div
+										class="flip-card-front p-3 text-start shadow bg-hauto rounded"
+									>
+										<h3>Hamster Auto</h3>
+										<h5>by Team FromScratch</h5>
 									</div>
-								</a>
-								<!-- <div class="offcanvas offcanvas-bottom h-100" tabindex="-1" id="infoProjet6"
-                            aria-labelledby="titleProjet6">
-                            <div class="offcanvas-header">
-                                <h5 class="offcanvas-title text-dark" id="titleProjet6">Projet 6</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                            </div>
-                            <div class="row">
-                                <div class="col-xs-8 col-md-3 col-lg-3 offset-md-2 offset-lg-2 gy-4 gy-md-0">
-                                    <a class="btn btn-outline-primary P1">Accès au site ici !</a>
-                                </div>
-                                <a class="col-xs-8 col-md-3 col-lg-3 offset-md-2 offset-lg-2 gy-4 gy-md-0 btn btn-outline-success C1"><i class="fa-solid fa-code"></i></a>
-                            </div>
-                            <div class="offcanvas-body">
-                                <div id="carouselProjet6" class="carousel slide carousel-fade h-100" data-bs-ride="carousel" data-bs-touch="true">
-                                    <div class="carousel-indicators">
-                                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                    </div>
-                                    <div class="carousel-inner h-100 rounded-3">
-                                        <div class="carousel-item h-100 active" data-bs-interval="3000">
-                                            <img src="https://picsum.photos/1920/1080?random=1" class="d-block w-100" alt="carte6">
-                                        </div>
-                                        <div class="carousel-item h-100" data-bs-interval="3000">
-                                            <img src="https://picsum.photos/1920/1080?random=2" class="d-block w-100" alt="carte6">
-                                        </div>
-                                        <div class="carousel-item h-100" data-bs-interval="3000">
-                                            <img src="https://picsum.photos/1920/1080?random=3" class="d-block w-100" alt="carte6">
-                                        </div>
-                                    </div>
-                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselProjet6"
-                                        data-bs-slide="prev">
-                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                        <span class="visually-hidden">Previous</span>
-                                    </button>
-                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselProjet6"
-                                        data-bs-slide="next">
-                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                        <span class="visually-hidden">Next</span>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>                             -->
+									<div class="flip-card-back p-3 shadow text-start rounded">
+										<div class="row h-100">
+											<div class="col-12">
+												<h3>Description</h3>
+												<p>
+													Projet de fin d'étude Bac+2 - École ESIA d'Aflokkat.
+												</p>
+											</div>
+											<div class="col-8">
+												<h3>Langages utilisés</h3>
+												<div class="d-flex gap-3 mt-3">
+													<i class="fa-brands fa-html5 fa-2x htmlColor"></i>
+													<i
+														class="fa-brands fa-css3-alt fa-2x text-primary"
+													></i>
+													<img
+														class="jqueryColor mb-2"
+														width="8%"
+														src="../public/assets/img/jquery.png"
+														alt="jquery-logo"
+													/>
+													<img
+														class="mb-2"
+														src="../public/assets/img/twig.png"
+														alt=""
+														style="width: 5%"
+													/>
+													<img
+														class="mb-2"
+														src="../public/assets/img/mysql_logo.png"
+														alt=""
+														style="width: 8%"
+													/>
+													<i class="fa-brands fa-php fa-2x phpColor"></i>
+												</div>
+											</div>
+											<div class="col text-end align-self-end">
+												<a href="https://hamsterauto.com" target="_blank">
+													<button class="btn btn-outline-primary">
+														Visiter
+													</button>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
-						<span id="contact"></span>
+						<span id="contactme"></span>
 					</div>
 				</div>
 			</section>
-
-			<section class="py-5 bg-light">
+			<section class="py-5 bg-light" id="contactme">
 				<div class="container">
 					<h2 class="fw-bold">Un projet de création web ?</h2>
-					<h3 class="fw-light">Allons en discuter autour d'un café</h3>
+					<h4 class="fw-light">Allons en discuter autour d'un café</h4>
 					<div class="row mt-5 gy-4 align-items-center">
 						<div class="col-12 col-md-3 offset-md-1">
 							<!-- <img class="w-100 shadow rounded-3" src="../public/assets/img/grab-a-coffee.jpg" alt="grab-a-coffee" width="100%"> -->
@@ -1061,7 +910,11 @@
 									</div>
 								</div>
 								<div>
-									<button type="submit" class="d-flex justify-content-center btn btn-primary w-100" id="btn-submit">
+									<button
+										type="submit"
+										class="d-flex justify-content-center btn btn-primary w-100"
+										id="btn-submit"
+									>
 										Envoyer
 									</button>
 								</div>
@@ -1124,61 +977,62 @@
 					</div>
 				</div>
 			</div>
-			<!-- Modal -->
-			<div
-				class="modal fade"
-				id="mentionsLegales"
-				tabindex="-1"
-				aria-labelledby="mentionsLegales"
-				aria-hidden="true"
-			>
-				<div class="modal-dialog">
-					<div class="modal-content">
-						<div class="modal-header">
-							<h5 class="modal-title" id="mentionsLegales">Mentions légales</h5>
-							<button
-								type="button"
-								class="btn-close"
-								data-bs-dismiss="modal"
-								aria-label="Close"
-							></button>
+		</footer>
+
+		<!-- Modal -->
+		<div
+			class="modal fade"
+			id="mentionsLegales"
+			tabindex="-1"
+			aria-labelledby="mentionsLegales"
+			aria-hidden="true"
+		>
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="mentionsLegales">Mentions légales</h5>
+						<button
+							type="button"
+							class="btn-close"
+							data-bs-dismiss="modal"
+							aria-label="Close"
+						></button>
+					</div>
+					<div class="modal-body">
+						<div>
+							<h4>Webmaster</h4>
+							<p>Jean Marie Geronimi</p>
 						</div>
-						<div class="modal-body">
-							<div>
-								<h4>Webmaster</h4>
-								<p>Jean Marie Geronimi</p>
-							</div>
-							<div>
-								<h4>Hébergement</h4>
-								<p>
-									Hébergeur : OVH<br />
-									Siège social : 2 rue Kellermann - 59100 Roubaix - France<br />
-									RCS Lille Métropole 424 761 419 00045<br />
-									Code APE 2620Z<br />
-									SAS au capital de 10 174 560 €<br />
-									RCS : Lille Métropole – SIRET : 424 761 419 00045<br />
-									TVA : FR 22 424 761 419
-								</p>
-							</div>
-							<div>
-								<h4>Données personnelles</h4>
-								<p>
-									Les seules informations recueillies sur ce site sont celles
-									données par le formulaire de contact. Elles ne sont utilisées
-									que pour vous répondre et ne sont pas stockées dans des
-									fichiers numériques et ne sont ni revendues ni communiqées à
-									des tiers à des fins commerciales et/ou publicitaires.
-									<br />
-									Conformément aux lois « Informatique & Liberté » et « RGPD »,
-									vous pouvez nous contacter pour vous assurer de la bonne
-									conformité à ces déclarations.
-								</p>
-							</div>
+						<div>
+							<h4>Hébergement</h4>
+							<p>
+								Hébergeur : OVH<br />
+								Siège social : 2 rue Kellermann - 59100 Roubaix - France<br />
+								RCS Lille Métropole 424 761 419 00045<br />
+								Code APE 2620Z<br />
+								SAS au capital de 10 174 560 €<br />
+								RCS : Lille Métropole – SIRET : 424 761 419 00045<br />
+								TVA : FR 22 424 761 419
+							</p>
+						</div>
+						<div>
+							<h4>Données personnelles</h4>
+							<p>
+								Les seules informations recueillies sur ce site sont celles
+								données par le formulaire de contact. Elles ne sont utilisées
+								que pour vous répondre et ne sont pas stockées dans des fichiers
+								numériques et ne sont ni revendues ni communiqées à des tiers à
+								des fins commerciales et/ou publicitaires.
+								<br />
+								Conformément aux lois « Informatique & Liberté » et « RGPD »,
+								vous pouvez nous contacter pour vous assurer de la bonne
+								conformité à ces déclarations.
+							</p>
 						</div>
 					</div>
 				</div>
 			</div>
-		</footer>
+		</div>
 
 		<btn-top-component></btn-top-component>
 

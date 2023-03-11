@@ -3,7 +3,7 @@ $(function () {
 });
 
 let formContact = function () {
-    $('#btn-submit').prop('disabled', true);
+	$("#btn-submit").prop("disabled", true);
 	let inputValues = {};
 	$("#flexCheckDefault:checked").val()
 		? (inputValues["cgu"] = $("#flexCheckDefault:checked").val())
@@ -24,7 +24,7 @@ let formContact = function () {
 				animation: true,
 				title: response["msg"],
 				icon: "success",
-                width: 500,
+				width: 500,
 			});
 		},
 		error: function (jqxhr, textStatus, errorThrown) {
@@ -49,3 +49,45 @@ let toastMixin = Swal.mixin({
 		toast.addEventListener("mouseleave", Swal.resumeTimer);
 	},
 });
+
+/*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
+const sections = document.querySelectorAll("section[id]");
+
+function scrollActive() {
+	const scrollY = window.pageYOffset;
+
+	sections.forEach((current) => {
+		const sectionHeight = current.offsetHeight,
+			sectionTop = current.offsetTop - 50,
+			sectionId = current.getAttribute("id");
+
+		const menuItem = document.querySelector(
+			".nav__menu a[href*=" + sectionId + "]"
+		);
+		if(menuItem){
+			if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+				document
+					.querySelector(".nav__menu a[href*=" + sectionId + "]")
+					.classList.add("active-link");
+			} else {
+				document
+					.querySelector(".nav__menu a[href*=" + sectionId + "]")
+					.classList.remove("active-link");
+			}
+		}
+	});
+}
+window.addEventListener("scroll", scrollActive);
+
+/*=============== CHANGE BACKGROUND HEADER ===============*/
+function scrollHeader() {
+	const header = document.getElementById("header");
+	// When the scroll is greater than 80 viewport height, add the scroll-header class to the header tag
+	if (this.scrollY >= 80) header.classList.add("scroll-header");
+	else header.classList.remove("scroll-header");
+}
+window.addEventListener("scroll", scrollHeader);
+
+// add padding-top to bady (if necessary)
+let navbar_height = document.querySelector(".nav").offsetHeight;
+$("body").attr("style", "padding-top:" + navbar_height + "px !important");
