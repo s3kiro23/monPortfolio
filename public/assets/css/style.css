@@ -404,7 +404,7 @@ img {
 
 #btn-back-to-top {
 	position: fixed;
-	bottom: 10%;
+	bottom: 14%;
 	right: 5%;
 	display: none;
 	transition: all 0.2s ease-in-out;
